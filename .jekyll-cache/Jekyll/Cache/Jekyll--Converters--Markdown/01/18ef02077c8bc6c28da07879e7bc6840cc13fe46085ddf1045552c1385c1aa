@@ -1,0 +1,24 @@
+I"�<p>I’m a data scientist at <a href="https://heap.io/">Heap</a>. My interests include statistics, data analysis, education, and programming in R.</p>
+
+<p>I’m the co-author with Julia Silge of the tidytext package and the O’Reilly book Text Mining with R. I’m also the author of the <a href="http://github.com/dgrtwo/broom">broom</a> and <a href="http://github.com/dgrtwo/fuzzyjoin">fuzzyjoin</a> packages, and of the e-book <a href="http://varianceexplained.org/r/empirical-bayes-book/">Introduction to Empirical Bayes</a>.</p>
+
+<p>I previously worked as Chief Data Scientist at <a href="http://datacamp.com/">DataCamp</a> and as a data scientist at Stack Overflow, and received a PhD in <a href="http://www.princeton.edu/qcbgrad/">Quantitative and Computational Biology</a> from Princeton University.</p>
+
+<h1 id="books">Books</h1>
+
+<ul>
+  <li><a href="https://www.amazon.com/gp/product/1491981652/">Text Mining with R: A Tidy Approach</a>: a guide to drawing insights from text using the <a href="http://github.com/dgrtwo/tidytext">tidytext</a> package in R. Co-authored with Julia Silge, and published by O’Reilly in July 2017. Also available <a href="https://www.tidytextmining.com/">for free online</a>.</li>
+  <li><a href="http://varianceexplained.org/r/empirical-bayes-book/">Introduction to Empirical Bayes: Examples from Baseball Statistics</a>. An e-book demonstrating the statistical method of empirical Bayes, based on the example of estimating baseball batting averages.</li>
+</ul>
+
+<h1 id="links">Links</h1>
+
+<ul>
+  <li><a href="https://github.com/joseluistello">GitHub</a></li>
+</ul>
+
+<h1 id="about-this-site">About This Site</h1>
+
+<p>This site is powered by <a href="http://jekyllrb.com/">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a> theme. All blog posts are released under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+
+:ET

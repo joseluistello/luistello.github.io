@@ -1,0 +1,48 @@
+I"�<p>I’m a data scientist at <a href="https://heap.io/">Heap</a>. My interests include statistics, data analysis, education, and programming in R.</p>
+
+<p>I’m the co-author with Julia Silge of the tidytext package and the O’Reilly book Text Mining with R. I’m also the author of the <a href="http://github.com/dgrtwo/broom">broom</a> and <a href="http://github.com/dgrtwo/fuzzyjoin">fuzzyjoin</a> packages, and of the e-book <a href="http://varianceexplained.org/r/empirical-bayes-book/">Introduction to Empirical Bayes</a>.</p>
+
+<p>I previously worked as Chief Data Scientist at <a href="http://datacamp.com/">DataCamp</a> and as a data scientist at Stack Overflow, and received a PhD in <a href="http://www.princeton.edu/qcbgrad/">Quantitative and Computational Biology</a> from Princeton University.</p>
+
+<h1 id="books">Books</h1>
+
+<ul>
+  <li><a href="https://www.amazon.com/gp/product/1491981652/">Text Mining with R: A Tidy Approach</a>: a guide to drawing insights from text using the <a href="http://github.com/dgrtwo/tidytext">tidytext</a> package in R. Co-authored with Julia Silge, and published by O’Reilly in July 2017. Also available <a href="https://www.tidytextmining.com/">for free online</a>.</li>
+  <li><a href="http://varianceexplained.org/r/empirical-bayes-book/">Introduction to Empirical Bayes: Examples from Baseball Statistics</a>. An e-book demonstrating the statistical method of empirical Bayes, based on the example of estimating baseball batting averages.</li>
+</ul>
+
+<h1 id="software">Software</h1>
+
+<ul>
+  <li><a href="http://github.com/dgrtwo/broom">broom</a>: Convert messy model outputs to a tidy format, for use with tools such as <a href="http://github.com/hadley/dplyr">dplyr</a> and <a href="http://github.com/hadley/tidyr">tidyr</a>.</li>
+  <li><a href="http://github.com/dgrtwo/fuzzyjoin">fuzzyjoin</a>: Join tables based on inexact matching of columns</li>
+  <li><a href="http://github.com/dgrtwo/tidytext">tidytext</a>: Analyze text using tidy packages such as dplyr, ggplot2, and tidyr</li>
+  <li><a href="https://github.com/dgrtwo/stackr">stackr</a>: R package for connecting to the Stack Exchange API</li>
+</ul>
+
+<h1 id="publications">Publications</h1>
+
+<ol>
+  <li>Johnson EL, <strong>Robinson D.G.</strong>, Coller HA. (2017) <a href="https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-017-3521-0">Widespread changes in mRNA stability contribute to quiescence-specific gene expression patterns in a fibroblast model of quiescence.</a> <em>BMC Genomics</em> 2017, 18(1):123.</li>
+  <li><strong>Robinson, D.G.</strong> (2015) <a href="http://arxiv.org/abs/1412.3565">broom: An R package for converting statistical analysis objects into tidy data frames</a>. arXiv preprint. arXiv:1412.3565 [stat.CO].</li>
+  <li><strong>Robinson, D.G.,</strong> Wang, J., and Storey, J.D. (2014) <a href="http://biorxiv.org/content/early/2014/12/30/013342">A nested parallel experiment demonstrates differences in intensity-dependence between RNA-seq and microarrays</a>. biorXiv preprint. doi:10.1101/013342.</li>
+  <li><strong>Robinson, D.G.</strong> and Storey, J.D. (2014) <a href="http://bioinformatics.oxfordjournals.org/content/early/2014/09/03/bioinformatics.btu552.abstract?keytype=ref&amp;ijkey=al7iHAgvbsLcdYj">subSeq: Determining appropriate sequencing depth through efficient read subsampling</a>. Bioinformatics, 30 (23): 3424-3426. doi: 10.1093/bioinformatics/btu552.</li>
+  <li><strong>Robinson, D.G.</strong>, Chen, W., Storey, J.D., and Gresham, D. (2014) <a href="http://www.g3journal.org/content/early/2013/10/30/g3.113.008565.abstract">Design and Analysis of Bar-seq Experiments</a>. G3: Genes/Genomes/Genetics, 4(1), 11-18</li>
+  <li><strong>Robinson, D.G.</strong>, Lee, M.C. and Marx, C.J. (2012) <a href="http://nar.oxfordjournals.org/content/early/2012/08/14/nar.gks778.full">OASIS: an automated program for global investigation of bacterial and archaeal insertion sequences</a>. Nucleic Acids Research, 10.1093/nar/gks778.</li>
+</ol>
+
+<h1 id="links">Links</h1>
+
+<ul>
+  <li><a href="https://github.com/joseluistello">My GitHub</a></li>
+</ul>
+
+<p><a href="http://stackoverflow.com/users/712603/david-robinson">
+<img src="http://stackoverflow.com/users/flair/712603.png" width="208" height="58" alt="profile for David Robinson at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for David Robinson at Stack Overflow, Q&amp;A for professional and enthusiast programmers" />
+</a></p>
+
+<h1 id="about-this-site">About This Site</h1>
+
+<p>This site is powered by <a href="http://jekyllrb.com/">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a> theme. All blog posts are released under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+
+:ET
