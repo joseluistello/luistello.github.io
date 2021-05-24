@@ -10,17 +10,13 @@ comments: true
 ---
 
 
-What Is Per Capita GDP? 
+## What Is Per Capita GDP? 
 
-Per capita gross domestic product (GDP) is a
-metric that breaks down a country’s economic output per person and is
-calculated by dividing the GDP of a country by its population.
+**Per capita gross domestic product (GDP)** is a metric that breaks down a country’s economic output per person and is calculated by dividing the GDP of a country by its population.
 
-In this project, I want to visualize Mexico GDPPC growth and forecasting
-Mexico GDPPC for the next 5 years.
+In this project, I'm going to visualize Mexico GDPPC growth and **forecasting GDPPC for the next 3 and 6 years.**
 
-I’m going to use the fppp3 package. This package it’s created by Rob J
-Hyndman and George Athanasopoulos.
+I’ll use the **fpp3** package. This package it’s created by **Rob J Hyndman and George Athanasopoulos.**
 
 You can install the stable version from CRAN.
 
@@ -59,26 +55,24 @@ library(fpp3)
     ## x tsibble::setdiff()   masks base::setdiff()
     ## x tsibble::union()     masks base::union()
 
-\*\*\* Manipulating data
+### Manipulating data
 
-\*\* By default, we have a data set from global economy (thanks to fpp3)
+By default, we have a data set from global economy (thanks to fpp3)
 
 This data set contains 9 variables:
 
-Country Code Year GDP Growth CPI Imports Exports Population
+> Country, Code, Year, GDP, Growth, CPI, Imports, Exports, Population.
 
-We only need GDPPC and Population. So, lets begin.
+#### We only need GDPPC and Population. So, lets begin.
 
-This code creates a new frame that we are going to use across all the
-project.
+I'm going to start with dplyr and create a new column. This code creates a new frame that we are going to use across the project.
 
 ``` r
 percapita <- global_economy %>%
   mutate(GDP_per_capita = GDP / Population)
 ```
 
-We make a pipeline to filter Mexico from column Country and plot the
-growth.
+Then, we make a pipeline to filter Mexico from column Country and plot the growth.
 
 ``` r
 percapita %>%
@@ -89,9 +83,9 @@ percapita %>%
        title = "Ingresos per capita for Mexico")
 ```
 
-![](proyectomexico_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+![](images/../../images/chunk%201.png)<!-- -->
 
-Then, we make a forecasting model
+**Now we can make the forecasting model**
 
 ``` r
 TSLM(GDP_per_capita ~ trend())
@@ -106,6 +100,9 @@ fit <- percapita %>%
 
     ## Warning: 7 errors (1 unique) encountered for trend_model
     ## [7] 0 (non-NA) cases
+
+
+**We can see the values of fit just by writing fit.**
 
 ``` r
 fit
@@ -126,6 +123,10 @@ fit
     ##  9 Argentina                <TSLM>
     ## 10 Armenia                  <TSLM>
     ## # ... with 253 more rows
+
+
+### Adding time by 3 years
+
 
 ``` r
 fit %>% forecast(h = "3 years")
@@ -155,14 +156,13 @@ fit %>%
   labs(y = "$Pesos", title = "Ingresos per capita en México")
 ```
 
-![](proyectomexico_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](images/../../images/chunk%202.png)<!-- -->
 
-``` r
-TSLM(GDP_per_capita ~ trend())
-```
 
-    ## <TSLM model definition>
 
+
+
+### Adding time by 6 years 
 ``` r
 fit2 <- percapita %>%
   model(trend_model = TSLM(GDP_per_capita ~ trend()))
@@ -190,6 +190,9 @@ fit
     ##  9 Argentina                <TSLM>
     ## 10 Armenia                  <TSLM>
     ## # ... with 253 more rows
+
+
+
 
 ``` r
 fit %>% forecast(h = "6 years")
@@ -219,4 +222,4 @@ fit %>%
   labs(y = "$Pesos", title = "Ingresos per capita en México")
 ```
 
-![](proyectomexico_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+![](images/../../images/chunk%203.png)<!-- -->
