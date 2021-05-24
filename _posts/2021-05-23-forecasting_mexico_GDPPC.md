@@ -83,7 +83,7 @@ percapita %>%
        title = "Ingresos per capita for Mexico")
 ```
 
-![](images/../../images/chunk%201.png)<!-- -->
+![](/images/chunk%201.png)<!-- -->
 
 **Now we can make the forecasting model**
 
@@ -156,8 +156,7 @@ fit %>%
   labs(y = "$Pesos", title = "Ingresos per capita en México")
 ```
 
-![](images/../../images/chunk%202.png)<!-- -->
-
+![](/images/chunk%202.png)<!-- -->
 
 
 
@@ -222,4 +221,4 @@ fit %>%
   labs(y = "$Pesos", title = "Ingresos per capita en México")
 ```
 
-![](images/../../images/chunk%203.png)<!-- -->
+![](/images/chunk%203.png)<!-- -->

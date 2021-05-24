@@ -1,0 +1,498 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Forecasting Mexico &#8211; Simplificando la complejidad</title>
+<meta name="description" content="What Is Per Capita GDP?
+">
+<meta name="keywords" content="data analysis, forecasting, r">
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Forecasting Mexico">
+<meta name="twitter:description" content="What Is Per Capita GDP?
+">
+<meta name="twitter:site" content="@jotaele_tello">
+<meta name="twitter:creator" content="@jotaele_tello">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://localhost:4000/images/default-thumb.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Forecasting Mexico">
+<meta property="og:description" content="What Is Per Capita GDP?
+">
+<meta property="og:url" content="http://localhost:4000/r/forecasting_mexico_GDPPC/">
+<meta property="og:site_name" content="Simplificando la complejidad">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/r/forecasting_mexico_GDPPC/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Simplificando la complejidad Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+	<script src="http://localhost:4000/assets/js/vendor/html5shiv.min.js"></script>
+	<script src="http://localhost:4000/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<!-- MathJax -->
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57723549-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+</head>
+
+<body class="post">
+
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="http://localhost:4000">Simplificando la complejidad</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" id="site-nav" class="nav">
+		    <ul>
+		        
+					    
+					    <li><a href="http://localhost:4000/about/" >About Me</a></li>
+					  
+					    
+					    <li><a href="http://localhost:4000/posts/" >Portfolio</a></li>
+					  
+					    
+					    <li><a href="https://joseluistello.substack.com/" target="_blank">Library</a></li>
+					  
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    
+
+
+	<img src="http://localhost:4000/images/joseluistello.jpg" class="bio-photo" alt="José Luis Tello bio photo">
+
+<h3>José Luis Tello</h3>
+<p>Data analyst, finance & business strategy.</p>
+<a href="mailto:joluistello@gmail.com" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
+<a href="http://twitter.com/jotaele_tello" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
+
+
+
+
+
+<a href="http://github.com/joseluistello" class="author-social" target="_blank"><i class="fa fa-github"></i> Github</a>
+
+
+
+
+
+
+
+
+<style type="text/css"> 
+.styled-button-4 {
+	-webkit-box-shadow:rgba(0,0,0,0.98) 0 1px 0 0;
+	-moz-box-shadow:rgba(0,0,0,0.98) 0 1px 0 0;
+	box-shadow:rgba(0,0,0,0.98) 0 1px 0 0;
+	background-color:#EEE;
+	border-radius:0;
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border:1px solid #999;
+	color:#666;
+	font-family:'Lucida Grande',Tahoma,Verdana,Arial,Sans-serif;
+	font-size:11px;
+	font-weight:700;
+	padding:2px 6px;
+	height:28px
+}
+</style>
+
+
+<h4>Recomendaciones</h4>
+<ul>
+    <li><a href="https://www.youtube.com/channel/UC8KCb358oioQMcJ5pUfs8UQ">Antonio Feregrino - Machine Learning</a></li>
+    <li><a href="https://www.youtube.com/channel/UClMCc-ACtQ9gJ5BRlHZkTKQ">Carlos Haro - Ciencia de datos</a></li>
+    <li><a href="http://varianceexplained.org/">David Robinson - Ciencia de datos </a></li>
+    <li><a href="https://www.youtube.com/channel/UCTTBgWyJl2HrrhQOOc710kA">Julia Silge - Ciencia de datos</a></li>
+
+</ul>
+  </div>
+  <article class="post">
+    <div class="headline-wrap">
+      
+        <h1><a href="http://localhost:4000/r/forecasting_mexico_GDPPC/" rel="bookmark" title="Forecasting Mexico">Forecasting Mexico</a></h1>
+      
+    </div><!--/ .headline-wrap -->
+    <div class="article-wrap">
+      <h2 id="what-is-per-capita-gdp">What Is Per Capita GDP?</h2>
+
+<p><strong>Per capita gross domestic product (GDP)</strong> is a metric that breaks down a country’s economic output per person and is calculated by dividing the GDP of a country by its population.</p>
+
+<p>In this project, I’m going to visualize Mexico GDPPC growth and <strong>forecasting GDPPC for the next 3 and 6 years.</strong></p>
+
+<p>I’ll use the <strong>fpp3</strong> package. This package it’s created by <strong>Rob J Hyndman and George Athanasopoulos.</strong></p>
+
+<p>You can install the stable version from CRAN.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">install.packages</span><span class="p">(</span><span class="err">‘</span><span class="n">fpp3</span><span class="err">’</span><span class="p">,</span><span class="w"> </span><span class="n">dependencies</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p>You can install the development version from Github</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">remotes</span><span class="o">::</span><span class="n">install</span><span class="err">\_</span><span class="n">github</span><span class="p">(</span><span class="err">“</span><span class="n">robjhyndman</span><span class="o">/</span><span class="n">fpp3</span><span class="o">-</span><span class="n">package</span><span class="err">”</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p>So, load the package.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">fpp3</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Warning: package 'fpp3' was built under R version 4.0.5
+
+## -- Attaching packages -------------------------------------------- fpp3 0.4.0 --
+
+## v tibble      3.1.1      v tsibble     1.0.1 
+## v dplyr       1.0.5      v tsibbledata 0.3.0 
+## v tidyr       1.1.3      v feasts      0.2.1 
+## v lubridate   1.7.10     v fable       0.3.1 
+## v ggplot2     3.3.3
+
+## -- Conflicts ------------------------------------------------- fpp3_conflicts --
+## x lubridate::date()    masks base::date()
+## x dplyr::filter()      masks stats::filter()
+## x tsibble::intersect() masks base::intersect()
+## x tsibble::interval()  masks lubridate::interval()
+## x dplyr::lag()         masks stats::lag()
+## x tsibble::setdiff()   masks base::setdiff()
+## x tsibble::union()     masks base::union()
+</code></pre></div></div>
+
+<h3 id="manipulating-data">Manipulating data</h3>
+
+<p>By default, we have a data set from global economy (thanks to fpp3)</p>
+
+<p>This data set contains 9 variables:</p>
+
+<blockquote>
+  <p>Country, Code, Year, GDP, Growth, CPI, Imports, Exports, Population.</p>
+</blockquote>
+
+<h4 id="we-only-need-gdppc-and-population-so-lets-begin">We only need GDPPC and Population. So, lets begin.</h4>
+
+<p>I’m going to start with dplyr and create a new column. This code creates a new frame that we are going to use across the project.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">percapita</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">global_economy</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">mutate</span><span class="p">(</span><span class="n">GDP_per_capita</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GDP</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">Population</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Then, we make a pipeline to filter Mexico from column Country and plot the growth.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">percapita</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">filter</span><span class="p">(</span><span class="n">Country</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"Mexico"</span><span class="p">,)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">autoplot</span><span class="p">(</span><span class="n">GDP_per_capita</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w">
+  </span><span class="n">labs</span><span class="p">(</span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Pesos"</span><span class="p">,</span><span class="w">
+       </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Years"</span><span class="p">,</span><span class="w">
+       </span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Ingresos per capita for Mexico"</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="/images/chunk%201.png" alt="" /><!-- --></p>
+
+<p><strong>Now we can make the forecasting model</strong></p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">TSLM</span><span class="p">(</span><span class="n">GDP_per_capita</span><span class="w"> </span><span class="o">~</span><span class="w"> </span><span class="n">trend</span><span class="p">())</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## &lt;TSLM model definition&gt;
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fit</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">percapita</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">model</span><span class="p">(</span><span class="n">trend_model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TSLM</span><span class="p">(</span><span class="n">GDP_per_capita</span><span class="w"> </span><span class="o">~</span><span class="w"> </span><span class="n">trend</span><span class="p">()))</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Warning: 7 errors (1 unique) encountered for trend_model
+## [7] 0 (non-NA) cases
+</code></pre></div></div>
+
+<p><strong>We can see the values of fit just by writing fit.</strong></p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fit</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## # A mable: 263 x 2
+## # Key:     Country [263]
+##    Country             trend_model
+##    &lt;fct&gt;                   &lt;model&gt;
+##  1 Afghanistan              &lt;TSLM&gt;
+##  2 Albania                  &lt;TSLM&gt;
+##  3 Algeria                  &lt;TSLM&gt;
+##  4 American Samoa           &lt;TSLM&gt;
+##  5 Andorra                  &lt;TSLM&gt;
+##  6 Angola                   &lt;TSLM&gt;
+##  7 Antigua and Barbuda      &lt;TSLM&gt;
+##  8 Arab World               &lt;TSLM&gt;
+##  9 Argentina                &lt;TSLM&gt;
+## 10 Armenia                  &lt;TSLM&gt;
+## # ... with 253 more rows
+</code></pre></div></div>
+
+<h3 id="adding-time-by-3-years">Adding time by 3 years</h3>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fit</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="n">forecast</span><span class="p">(</span><span class="n">h</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"3 years"</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## # A fable: 789 x 5 [1Y]
+## # Key:     Country, .model [263]
+##    Country        .model       Year   GDP_per_capita  .mean
+##    &lt;fct&gt;          &lt;chr&gt;       &lt;dbl&gt;           &lt;dist&gt;  &lt;dbl&gt;
+##  1 Afghanistan    trend_model  2018     N(526, 9653)   526.
+##  2 Afghanistan    trend_model  2019     N(534, 9689)   534.
+##  3 Afghanistan    trend_model  2020     N(542, 9727)   542.
+##  4 Albania        trend_model  2018  N(4716, 476419)  4716.
+##  5 Albania        trend_model  2019  N(4867, 481086)  4867.
+##  6 Albania        trend_model  2020  N(5018, 486012)  5018.
+##  7 Algeria        trend_model  2018  N(4410, 643094)  4410.
+##  8 Algeria        trend_model  2019  N(4489, 645311)  4489.
+##  9 Algeria        trend_model  2020  N(4568, 647602)  4568.
+## 10 American Samoa trend_model  2018 N(12491, 652926) 12491.
+## # ... with 779 more rows
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fit</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">forecast</span><span class="p">(</span><span class="n">h</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"3 years"</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">filter</span><span class="p">(</span><span class="n">Country</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"Mexico"</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">autoplot</span><span class="p">(</span><span class="n">percapita</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w">
+  </span><span class="n">labs</span><span class="p">(</span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"$Pesos"</span><span class="p">,</span><span class="w"> </span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Ingresos per capita en México"</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="/images/chunk%202.png" alt="" /><!-- --></p>
+
+<h3 id="adding-time-by-6-years">Adding time by 6 years</h3>
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fit2</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">percapita</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">model</span><span class="p">(</span><span class="n">trend_model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TSLM</span><span class="p">(</span><span class="n">GDP_per_capita</span><span class="w"> </span><span class="o">~</span><span class="w"> </span><span class="n">trend</span><span class="p">()))</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## Warning: 7 errors (1 unique) encountered for trend_model
+## [7] 0 (non-NA) cases
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fit</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## # A mable: 263 x 2
+## # Key:     Country [263]
+##    Country             trend_model
+##    &lt;fct&gt;                   &lt;model&gt;
+##  1 Afghanistan              &lt;TSLM&gt;
+##  2 Albania                  &lt;TSLM&gt;
+##  3 Algeria                  &lt;TSLM&gt;
+##  4 American Samoa           &lt;TSLM&gt;
+##  5 Andorra                  &lt;TSLM&gt;
+##  6 Angola                   &lt;TSLM&gt;
+##  7 Antigua and Barbuda      &lt;TSLM&gt;
+##  8 Arab World               &lt;TSLM&gt;
+##  9 Argentina                &lt;TSLM&gt;
+## 10 Armenia                  &lt;TSLM&gt;
+## # ... with 253 more rows
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fit</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="n">forecast</span><span class="p">(</span><span class="n">h</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"6 years"</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## # A fable: 1,578 x 5 [1Y]
+## # Key:     Country, .model [263]
+##    Country     .model       Year  GDP_per_capita .mean
+##    &lt;fct&gt;       &lt;chr&gt;       &lt;dbl&gt;          &lt;dist&gt; &lt;dbl&gt;
+##  1 Afghanistan trend_model  2018    N(526, 9653)  526.
+##  2 Afghanistan trend_model  2019    N(534, 9689)  534.
+##  3 Afghanistan trend_model  2020    N(542, 9727)  542.
+##  4 Afghanistan trend_model  2021    N(550, 9766)  550.
+##  5 Afghanistan trend_model  2022    N(558, 9806)  558.
+##  6 Afghanistan trend_model  2023    N(566, 9847)  566.
+##  7 Albania     trend_model  2018 N(4716, 476419) 4716.
+##  8 Albania     trend_model  2019 N(4867, 481086) 4867.
+##  9 Albania     trend_model  2020 N(5018, 486012) 5018.
+## 10 Albania     trend_model  2021 N(5169, 491198) 5169.
+## # ... with 1,568 more rows
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fit</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">forecast</span><span class="p">(</span><span class="n">h</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"6 years"</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">filter</span><span class="p">(</span><span class="n">Country</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"Mexico"</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">autoplot</span><span class="p">(</span><span class="n">percapita</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w">
+  </span><span class="n">labs</span><span class="p">(</span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"$Pesos"</span><span class="p">,</span><span class="w"> </span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Ingresos per capita en México"</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="/images/chunk%203.png" alt="" /><!-- --></p>
+
+      <hr />
+      <footer role="contentinfo">
+        <div class="article-author-bottom">
+          
+
+
+	<img src="http://localhost:4000/images/joseluistello.jpg" class="bio-photo" alt="José Luis Tello bio photo">
+
+<h3>José Luis Tello</h3>
+<p>Data analyst, finance & business strategy.</p>
+<a href="mailto:joluistello@gmail.com" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
+<a href="http://twitter.com/jotaele_tello" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
+
+
+
+
+
+<a href="http://github.com/joseluistello" class="author-social" target="_blank"><i class="fa fa-github"></i> Github</a>
+
+
+
+
+
+
+
+
+<style type="text/css"> 
+.styled-button-4 {
+	-webkit-box-shadow:rgba(0,0,0,0.98) 0 1px 0 0;
+	-moz-box-shadow:rgba(0,0,0,0.98) 0 1px 0 0;
+	box-shadow:rgba(0,0,0,0.98) 0 1px 0 0;
+	background-color:#EEE;
+	border-radius:0;
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border:1px solid #999;
+	color:#666;
+	font-family:'Lucida Grande',Tahoma,Verdana,Arial,Sans-serif;
+	font-size:11px;
+	font-weight:700;
+	padding:2px 6px;
+	height:28px
+}
+</style>
+
+
+<h4>Recomendaciones</h4>
+<ul>
+    <li><a href="https://www.youtube.com/channel/UC8KCb358oioQMcJ5pUfs8UQ">Antonio Feregrino - Machine Learning</a></li>
+    <li><a href="https://www.youtube.com/channel/UClMCc-ACtQ9gJ5BRlHZkTKQ">Carlos Haro - Ciencia de datos</a></li>
+    <li><a href="http://varianceexplained.org/">David Robinson - Ciencia de datos </a></li>
+    <li><a href="https://www.youtube.com/channel/UCTTBgWyJl2HrrhQOOc710kA">Julia Silge - Ciencia de datos</a></li>
+
+</ul>
+        </div>
+        <p class="byline"><strong>Forecasting Mexico</strong> was published on <time datetime="2021-05-22T18:50:00-05:00">May 22, 2021</time>.</p>
+      </footer>
+    </div><!-- /.article-wrap -->
+  
+    <section id="disqus_thread"></section><!-- /#disqus_thread -->
+  
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  <div class="related-articles">
+  <h4>You might also enjoy <small class="pull-right">(<a href="http://localhost:4000/posts/">View all posts</a>)</small></h4>
+    <ul>
+    
+      <li><a href="http://localhost:4000/r/cranberry-sauce2/" title="The 'circular random walk' puzzle: tidy simulation of stochastic processes in R">The 'circular random walk' puzzle: tidy simulation of stochastic processes in R</a></li>
+    
+    </ul>
+    <hr />
+  </div><!-- /.related-articles -->
+  <footer>
+    
+
+<span>&copy; 2021 José Luis Tello. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a> theme.</span>
+
+  </footer>
+</div><!-- /.footer-wrap -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+
+
+  
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'joseluistello'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+	        
+
+</body>
+</html>
