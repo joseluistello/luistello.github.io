@@ -36,24 +36,6 @@ So, load the package.
 library(fpp3)
 ```
 
-    ## Warning: package 'fpp3' was built under R version 4.0.5
-
-    ## -- Attaching packages -------------------------------------------- fpp3 0.4.0 --
-
-    ## v tibble      3.1.1      v tsibble     1.0.1 
-    ## v dplyr       1.0.5      v tsibbledata 0.3.0 
-    ## v tidyr       1.1.3      v feasts      0.2.1 
-    ## v lubridate   1.7.10     v fable       0.3.1 
-    ## v ggplot2     3.3.3
-
-    ## -- Conflicts ------------------------------------------------- fpp3_conflicts --
-    ## x lubridate::date()    masks base::date()
-    ## x dplyr::filter()      masks stats::filter()
-    ## x tsibble::intersect() masks base::intersect()
-    ## x tsibble::interval()  masks lubridate::interval()
-    ## x dplyr::lag()         masks stats::lag()
-    ## x tsibble::setdiff()   masks base::setdiff()
-    ## x tsibble::union()     masks base::union()
 
 ### Manipulating data
 
