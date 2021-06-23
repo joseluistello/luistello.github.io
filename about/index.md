@@ -4,7 +4,6 @@ title: About Me
 tags: [about]
 comments: false
 ---
-
 ### Hi there, I'm José Luis Tello 👋
 
 #### Currently working as a Manager at Nort
@@ -18,14 +17,16 @@ comments: false
 - ⚡ I love to read mangas, books and blog posts
 
 ---
+
 ## Tech Stack:
 
 ### 🍓 Languages
 - R
-- Python
 - SQL
-  
-### 🌅 Tools
+- Python
+
+---
+### 💡 Tools
 - Rstudio
 - Ggplot2
 - VSC
@@ -36,6 +37,8 @@ comments: false
 - Tableau
 - Notion
 - Google Analytics
+
+---
 
 ## Theory Stack:
 ### 📚 Methods
@@ -48,6 +51,7 @@ comments: false
 - Forecasting 
 
 ---
+
 ### 📕 Latest Blog Posts and Projects
 
 <!-- BLOG-POST-LIST:START -->
