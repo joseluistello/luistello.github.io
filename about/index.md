@@ -5,39 +5,46 @@ tags: [about]
 comments: false
 ---
 
-# Hi there, I'm José Luis Tello 👋
+### Hi there, I'm José Luis Tello 👋
 
-## Currently working as a Manager at Nort
+#### Currently working as a Manager at Nort
 
-### I'm a data analyst, writter and complexity theory enthusiast.
+##### I'm a data analyst, writter and complexity theory enthusiast.
 ---
 
-- 🔭 I write some code and statistical models in my [portfolio](https://joseluistello.github.io/)
+- 🔭 I write some code, statistical models and financial analysis in my [portfolio](https://joseluistello.github.io/)
 - 🌱 I’m currently learning data engineering
 - ♨️ I’m looking to enter in tech industry
 - ⚡ I love to read mangas, books and blog posts
 
-## Connect with me:
-
-### [🔥 My substack 🔥](https://joseluistello.substack.com/)
-### [✔️ Twitter](https://twitter.com/jotaele_tello)
-
 ---
 ## Tech Stack:
+
 ### 🍓 Languages
 - R
 - Python
 - SQL
 ### 🌅 Tools
 - Rstudio
+- Ggplot2
 - VSC
 - Git
+- Github
 - Docker
 - Excel
 - Tableau
 - Notion
-- Obsidian
+- Google Analytics
 
+## Theory Stack:
+### 📚 Methods
+- Supervised learning approach 
+- Unsupervised learning approach
+- Descriptive statistics
+- Inferencial statistics 
+- Structured data
+- Financial modeling
+- Forecasting 
 
 ---
 ### 📕 Latest Blog Posts and Projects
@@ -50,12 +57,16 @@ comments: false
 
 <!-- BLOG-POST-LIST:END -->
 
-👉 [more about me](https://cdn11.bigcommerce.com/s-qcjhe6fjzo/images/stencil/1280x1280/products/20141/13761/CPT-4x12-1429__34407.1589231308.jpg?c=2)
+## Connect with me:
+
+### [🔥 My substack ](https://joseluistello.substack.com/)
+### [✔️ Twitter](https://twitter.com/jotaele_tello)
+### [😊 Linkedin](https://www.linkedin.com/in/joseluistello/)
 ---
 
 
 
-About This Site
+##### About This Site
 =========
 
 This site is powered by [Jekyll](http://jekyllrb.com/) using the [Minimal Mistakes](http://mademistakes.com/minimal-mistakes/) theme. All blog posts are released under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
