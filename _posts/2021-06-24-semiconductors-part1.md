@@ -3,7 +3,7 @@ layout: post
 title: "Semiconductors Quant Analysis"
 description: "An Overview to the Semiconductor market"
 output: html_document
-date: 2021-06-224 19:50:00 -0400
+date: 2021-06-25 19:50:00 -0400
 category: r
 tags: [data analysis, forecasting, r, finance]
 comments: true
