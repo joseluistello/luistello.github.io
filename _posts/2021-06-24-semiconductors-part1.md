@@ -13,18 +13,16 @@ comments: true
 We know that Semiconductors industry it's a complex industry. Without this industry, We could not be reading this article. We could not imagine all this progress. But understand this monster it's hard.
 
 --- 
-That's why I created this project.
+That's why I created this project. **I'm going to divide the project in 2 parts.** 
 
-I'm going to divide the project in 2 parts.
-
-The first part is divided into 4 main points:
+> The first part is divided into 4 main points:
 
 * A short introduction about the business model that exist in the industry 
 * A comparation about some index's with specially focus on FOX Index 
 * Select the companies that we will be analyzing throughout the project
 * Create models around the data and plot some nice visualizations
 
-The second part is divided into X points:
+> The second part is divided into X points:
 
 * I'm going to talk about one companie in particular 
 * Select some financial ratios
@@ -34,11 +32,9 @@ The second part is divided into X points:
   
 
 ---
-**For me**, the goal of this project consists on show you my knowledge on quant financial analysis, statistical learning and writing.
+> **For me**, the goal of this project consists on show you my knowledge on quant financial analysis, statistical learning and writing.
 
----
-
-**For you**, the project consists on understanding how the industry works, his performance over the years and why not, pick the opportunity to invest in the semiconductor industry.
+> **For you**, the project consists on understanding how the industry works, his performance over the years and why not, pick the opportunity to invest in the semiconductor industry.
 
 ---
 Let's begin with the first main point... **the business models.**
