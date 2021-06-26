@@ -25,29 +25,65 @@ The first part is divided into 4 main points:
 
 The second part is divided into X points:
 
-* Talk about one companie in particular 
+* I'm going to talk about one companie in particular 
 * Select some financial ratios
 * Download and plot the data
 * Explain patterns 
 * Regression analysis and forecasting modeling
 
-For me, the goal of this project consists on show you my knowledge on quant financial analysis, statistical learning and writing.
+**For me**, the goal of this project consists on show you my knowledge on quant financial analysis, statistical learning and writing.
 
-For you, the project consists on understanding how the industry works, his performance over the years and why not, pick the opportunity to invest in the semiconductor industry.
+**For you**, the project consists on understanding how the industry works, his performance over the years and why not, pick the opportunity to invest in the semiconductor industry.
+
+Let's begin with the first main point... **the business models.**
+
+In order to understand the complexity around the models, we need to figure out what is the main process for creating an IC'S 
+
+![Index](/images/semiconductores/process.png)
+
+As wee se, 
+
+which is why there are different business models around each step. We can categorize the industry in 4 business models, but we are going to focus only in the three major business models.
+
+1.- Foundry
+
+Foundry companies are concerned only with IC manufacturing.
+
+The foundry model is a microelectronics engineering and manufacturing business model consisting of a semiconductor fabrication plant, or foundry, and an integrated circuit design operation, each belonging to separate companies or subsidiaries.
+
+Foundry Model it's dominated by TSMC.
+
+2.- IDM
+
+IDMs design and manufacture integrated circuits (ICs),
+
+An integrated device manufacturer (IDM) is a semiconductor company which designs, manufactures, and sells integrated circuit (IC) products. As a classification, IDM is often used to differentiate between a company which handles semiconductor manufacturing in-house, and a fabless semiconductor company, which outsources production to a third-party. Due to the dynamic nature of the semiconductor industry, the term IDM has become less accurate than when it was coined.
+
+Intel, Texas instruments, are examples of this business model.
+
+3.- Fabless
+
+Fabless companies focus only on IC design.
+
+Fabless manufacturing is the design and sale of hardware devices and semiconductor chips while outsourcing their fabrication (or fab) to a specialized manufacturer called a semiconductor foundry. Foundries are typically, but not exclusively, located in the United States, People's Republic of China, and Taiwan. Fabless companies can benefit from lower capital costs while concentrating their research and development resources on the end market. Some fabless companies and pure play foundries (like TSMC) may offer integrated-circuit design services to third parties.
+
+Broadcom, Qualcomm, Nvidia, AMD are examples of this business model.
 
 ### Let's begin with a comparation in the performance of some Index's...
 
 ![Index](/images/semiconductores/performancecomparation.png)
 
 
-Above, we have 6 Index
+Above, we have a chart line with 6 Index
 
-SOX .- PHLX Semiconductor
-DJI.- Dow Jones Industrial 
-IXIC.- NASDAQ COMPOSITE
-GSPC.- S&P 500
-DAX.- German Index
-TSXV.- S&P/TSX CANADA COMPOSITE INDEX
+* **Blue_SOX.-** PHLX Semiconductor**
+* **BlueSky_DJI.-** Dow Jones Industrial 
+* **Pink_IXIC.-** NASDAQ COMPOSITE
+* **Purple_GSPC.-** S&P 500
+* **Orange_DAX.-** German Index
+* **Yellow_TSXV.-** S&P/TSX CANADA COMPOSITE INDEX
+
+If we look cloosely, 
 
 I'm going to use some packages.-
 
