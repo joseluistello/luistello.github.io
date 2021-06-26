@@ -1,6 +1,6 @@
 ---
 layout: home
-excerpt: "Blog on R, statistics, education and finance analysis by: José Luis Tello"
+excerpt: "Blog on R, statistics, education and financial analysis by: José Luis Tello"
 tags: [blog]
 ---
 
