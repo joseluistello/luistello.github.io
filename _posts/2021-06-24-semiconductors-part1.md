@@ -12,6 +12,7 @@ comments: true
 
 We know that Semiconductors industry it's a complex industry. Without this industry, We could not be reading this article. We could not imagine all this progress. But understand this monster it's hard.
 
+--- 
 That's why I created this project.
 
 I'm going to divide the project in 2 parts.
@@ -30,11 +31,16 @@ The second part is divided into X points:
 * Download and plot the data
 * Explain patterns 
 * Regression analysis and forecasting modeling
-
+  
+  
+---
 **For me**, the goal of this project consists on show you my knowledge on quant financial analysis, statistical learning and writing.
+
+---
 
 **For you**, the project consists on understanding how the industry works, his performance over the years and why not, pick the opportunity to invest in the semiconductor industry.
 
+---
 Let's begin with the first main point... **the business models.**
 
 In order to understand the complexity around the models, we need to figure out what is the main process for creating an IC'S 
