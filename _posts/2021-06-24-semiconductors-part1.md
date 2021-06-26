@@ -10,23 +10,38 @@ comments: true
 ---
 
 
-### Semiconductors industry it's a complex industry.
+We know that Semiconductors industry it's a complex industry. Without this industry, We could not be reading this article. We could not imagine all this progress. But understand this monster it's hard.
 
-We know that semiconductor industry is essential for the civilization and his development and advancement. We could not be reading this article without this industry. We could not imagine all this progress without their contributions. But understand this monster it's hard.
+That's why I created this project.
 
-**That's why I created this project.** 
+I'm going to divide the project in 2 parts.
 
-I'm going to publish 2 parts of the same project. 
+The first part is divided into 4 main points:
 
-For me, the goal of this first part consists on show you my knowledge on quant analysis, statistical learning aka machine learning and writing.
-
-For you, this part consists in understanding how the industry works and its performance over the years.
-
-The first part is divided into 4 points:
-
-* Write a short introduction about the business model that exist in the industry 
-* Write about the FOX Index
+* A short introduction about the business model that exist in the industry 
+* A comparation about some index's with specially focus on FOX Index 
 * Select the companies that we will be analyzing throughout the project
 * Create models around the data and plot some nice visualizations
+
+The second part is divided into X points:
+
+* Talk about one companie in particular 
+* Select some financial ratios
+* Download and plot the data
+* Explain patterns 
+* Regression analysis and forecasting modeling
+
+For me, the goal of this project consists on show you my knowledge on quant financial analysis, statistical learning and writing.
+
+For you, the project consists on understanding how the industry works, his performance over the years and why not, pick the opportunity to invest in the semiconductor industry.
+
+Let's begin... 
+
+I'm going to use some packages.-
+
+Tidyquant for finance
+Tidyverse for dplyr and ggplot
+Fpp3 for forecasting models
+Ggthemes for beautiful plots
 
 
