@@ -35,7 +35,19 @@ For me, the goal of this project consists on show you my knowledge on quant fina
 
 For you, the project consists on understanding how the industry works, his performance over the years and why not, pick the opportunity to invest in the semiconductor industry.
 
-Let's begin... 
+### Let's begin with a comparation in the performance of some Index's...
+
+![Index](/images/semiconductores/performancecomparation.png)
+
+
+Above, we have 6 Index
+
+SOX .- PHLX Semiconductor
+DJI.- Dow Jones Industrial 
+IXIC.- NASDAQ COMPOSITE
+GSPC.- S&P 500
+DAX.- German Index
+TSXV.- S&P/TSX CANADA COMPOSITE INDEX
 
 I'm going to use some packages.-
 
