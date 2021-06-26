@@ -32,7 +32,7 @@ The second part is divided into X points:
 * Explain patterns 
 * Regression analysis and forecasting modeling
   
-  
+
 ---
 **For me**, the goal of this project consists on show you my knowledge on quant financial analysis, statistical learning and writing.
 
@@ -51,7 +51,7 @@ As wee se,
 
 which is why there are different business models around each step. We can categorize the industry in 4 business models, but we are going to focus only in the three major business models.
 
-1.- Foundry
+### 1.- Foundry
 
 Foundry companies are concerned only with IC manufacturing.
 
@@ -59,7 +59,7 @@ The foundry model is a microelectronics engineering and manufacturing business m
 
 Foundry Model it's dominated by TSMC.
 
-2.- IDM
+### 2.- IDM
 
 IDMs design and manufacture integrated circuits (ICs),
 
@@ -67,7 +67,7 @@ An integrated device manufacturer (IDM) is a semiconductor company which designs
 
 Intel, Texas instruments, are examples of this business model.
 
-3.- Fabless
+### 3.- Fabless
 
 Fabless companies focus only on IC design.
 
