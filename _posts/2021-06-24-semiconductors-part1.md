@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Semiconductors Quant Analysis"
-description: "An Overview to the Semiconductor market"
+title: "Semiconductors Analysis"
+description: "Finance analysis and machine learning"
 output: html_document
 date: 2021-06-25 19:50:00 -0400
 category: r
@@ -111,7 +111,7 @@ and these are the packages for analysis and modeling:
 
 Let's begin!
 
-First, I need to download the data. 
+First, I need to download the data. This code it's going to help me creating the frames. 
 
 ```{r}
 sc_companies <- c("TSM", "UMC", "INTC", "TXN", "NXP", "NVDA", "AVGO", "QCOM") %>%
@@ -140,3 +140,176 @@ fabless <- c("NVDA", "AVGO", "QCOM") %>%
          from = "2015-01-01",
          to   = "2021-06-27")
 ```
+
+### Ploting the data
+
+```{r}
+  ggplot(sc_companies, 
+         aes(x = date, y = close, color = symbol)) + 
+    geom_line(size=1) +
+    labs(title = "Semiconductor Stock Price",
+         subtitle = 'A comparation between companies',
+         x = 'Date',
+         y =  "Close Price") +
+    theme_minimal() +
+    scale_color_brewer(palette = "Dark2") 
+```
+
+![Index](/images/semiconductores/semiconductorstockprice.png)
+
+### Let's wrap this companies for a better view.
+
+```{r}
+  ggplot(sc_companies, 
+         aes(x = date, y = close, color = symbol)) + 
+    geom_line(size=1) +
+    labs(title = "Semiconductor Stock Price Growth",
+         subtitle = '',
+         x = 'Date',
+         y =  "Close Price") +
+    theme_minimal() +
+    scale_color_brewer(palette = "Dark2") +
+    facet_wrap(~ symbol, ncol = 2, scale = "free_y")
+```
+
+![Index](/images/semiconductores/semiconductorwrap.png)
+
+### It's time to see between models.
+
+
+```{r}
+  ggplot(foundry, 
+         aes(x = date, y = close, color = symbol)) + 
+    geom_line(size=1) +
+    labs(title = "Semiconductor Stock Price",
+         subtitle = 'Foundry business model',
+         x = 'Date',
+         y =  "Close Price") +
+    theme_minimal() +
+    scale_color_brewer(palette = "Dark2") 
+```
+
+![Index](/images/semiconductores/foundrystock.png)
+
+```{r}
+  ggplot(fabless, 
+         aes(x = date, y = close, color = symbol)) + 
+    geom_line(size=1) +
+    labs(title = "Semiconductor Stock Price",
+         subtitle = 'Fabless business model',
+         x = 'Date',
+         y =  "Close Price") +
+    theme_minimal() +
+    scale_color_brewer(palette = "Dark2") 
+```
+
+![Index](/images/semiconductores/fablessstock.png)
+
+```{r}
+  ggplot(idm, 
+         aes(x = date, y = close, color = symbol)) + 
+    geom_line(size=1) +
+    labs(title = "Semiconductor Stock Price",
+         subtitle = 'IDM business model',
+         x = 'Date',
+         y =  "Close Price") +
+    theme_minimal() +
+    scale_color_brewer(palette = "Dark2") 
+```
+
+![Index](/images/semiconductores/idmstock.png)
+
+**The trend it's kinda obvious but remember... I have my personal goals for this project**
+
+```{r}
+  sc_companies %>% 
+    filter(symbol == "QCOM") %>% 
+   ggplot(aes(x = date, y = close, color = symbol))  +
+  geom_line(color = "indianred3", 
+            size=1 ) +
+  geom_smooth() +
+  labs(title = "Semiconductor Stock ",
+         subtitle = 'Qualcomm Trend',
+         x = 'Date',
+         y =  "Close Price") +
+  theme_minimal() +
+  scale_color_brewer(palette = "Dark2") +
+    facet_wrap(~ symbol, ncol = 2, scale = "free_y")
+```
+
+![Index](/images/semiconductores/qualcomtrend.png)
+
+### Let's see the anual returns for each companie categorize by model
+
+```{r}
+semicompanies_return_yearly_idm <-  idm %>%
+    group_by(symbol) %>%
+    tq_transmute(select     = adjusted, 
+                 mutate_fun = periodReturn, 
+                 period     = "yearly", 
+                 col_rename = "yearly.returns") 
+```
+
+```{r}
+semicompanies_return_yearly_idm %>%
+    ggplot(aes(x = year(date), y = yearly.returns, fill = symbol)) +
+    geom_bar(position = "dodge", stat = "identity") +
+    labs(title = "Anual Returns", 
+         subtitle = "IDM Business Model",
+         y = "Returns", x = "", color = "") +
+    scale_y_continuous(labels = scales::percent) +
+    coord_flip() +
+    theme_tq() +
+    scale_fill_tq()
+```
+
+![Index](/images/semiconductores/idmreturns.png)
+
+```{r}
+semicompanies_return_yearly_fabless <- fabless %>%
+    group_by(symbol) %>%
+    tq_transmute(select     = adjusted, 
+                 mutate_fun = periodReturn, 
+                 period     = "yearly", 
+                 col_rename = "yearly.returns")
+```
+
+
+```{r}
+semicompanies_return_yearly_fabless %>%
+    ggplot(aes(x = year(date), y = yearly.returns, fill = symbol)) +
+    geom_bar(position = "dodge", stat = "identity") +
+    labs(title = "Anual Returns", 
+         subtitle = "Fabless Business Model",
+         y = "Returns", x = "", color = "") +
+    scale_y_continuous(labels = scales::percent) +
+    coord_flip() +
+    theme_tq() +
+    scale_fill_tq()
+```
+
+![Index](/images/semiconductores/fablessreturn.png)
+
+```{r}
+semicompanies_return_yearly_foundry <- foundry %>%
+    group_by(symbol) %>%
+    tq_transmute(select     = adjusted, 
+                 mutate_fun = periodReturn, 
+                 period     = "yearly", 
+                 col_rename = "yearly.returns")
+```
+
+```{r}
+semicompanies_return_yearly_foundry %>%
+    ggplot(aes(x = year(date), y = yearly.returns, fill = symbol)) +
+    geom_bar(position = "dodge", stat = "identity") +
+    labs(title = "Anual Returns", 
+         subtitle = "Foundry Business Model",
+         y = "Returns", x = "", color = "") +
+    scale_y_continuous(labels = scales::percent) +
+    coord_flip() +
+    theme_tq() +
+    scale_fill_tq()
+```
+
+![Index](/images/semiconductores/foundryreturn.png)
