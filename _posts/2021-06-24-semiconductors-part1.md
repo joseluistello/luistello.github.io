@@ -105,4 +105,38 @@ and these are the packages for analysis and modeling:
 * **Fpp3** for forecasting models
 * **Ggthemes** for beautiful plots
 
+---
 
+### CODE
+
+Let's begin!
+
+First, I need to download the data. 
+
+```{r}
+sc_companies <- c("TSM", "UMC", "INTC", "TXN", "NXP", "NVDA", "AVGO", "QCOM") %>%
+  tq_get(get  = "stock.prices",
+         from = "2015-01-01",
+         to   = "2021-06-27")
+```
+
+```{r}
+foundry <- c("TSM", "UMC") %>%
+  tq_get(get  = "stock.prices",
+         from = "2015-01-01",
+         to   = "2021-06-27")
+```
+
+```{r}
+idm <- c("INTC", "TXN", "NXP") %>%
+  tq_get(get  = "stock.prices",
+         from = "2015-01-01",
+         to   = "2021-06-27")
+```
+
+```{r}
+fabless <- c("NVDA", "AVGO", "QCOM") %>%
+  tq_get(get  = "stock.prices",
+         from = "2015-01-01",
+         to   = "2021-06-27")
+```
