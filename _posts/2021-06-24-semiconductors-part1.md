@@ -3,7 +3,7 @@ layout: post
 title: "Semiconductors Analysis"
 description: "Finance analysis and machine learning"
 output: html_document
-date: 2021-06-25 19:50:00 -0400
+date: 2021-06-28 19:50:00 -0400
 category: r
 tags: [data analysis, forecasting, r, finance]
 comments: true
