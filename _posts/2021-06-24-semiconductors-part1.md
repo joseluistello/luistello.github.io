@@ -219,7 +219,7 @@ fabless <- c("NVDA", "AVGO", "QCOM") %>%
 
 ![Index](/images/semiconductores/idmstock.png)
 
-**The trend it's kinda obvious but remember... I have my personal goals for this project**
+### The trend it's kinda obvious but remember... I have my personal goals for this project**
 
 ```{r}
   sc_companies %>% 
