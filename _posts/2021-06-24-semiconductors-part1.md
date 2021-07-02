@@ -92,13 +92,13 @@ Let's see a comparation between the major index's in USA.
 
 **If we look closely, the PHLX Index outperforms the NASDAQ COMPOSITE which contains companies like Apple, Amazon, Facebook and Alphabet... not bad, right?**
 
-So, for this project i'm going to choose these companies, 2 or 3 per model:
+So, for this project i'm going to choose 2 or 3 per model:
 
 * **Foundry:** TSMC and UMC.
 * **IDM’s:** Intel, Texas instruments and NPX
 * **Fabless:** Broadcomm, Qualcomm and Nvidia.
 
-and these are the packages for analysis and modeling:
+These are the packages I will use throughout the project:
 
 * **Tidyquant** for finance
 * **Tidyverse** for dplyr and ggplot2
