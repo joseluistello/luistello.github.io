@@ -111,7 +111,7 @@ These are the packages I will use throughout the project:
 
 Let's begin!
 
-First, I need to download the data. This code it's going to help me creating the frames. 
+First, I need to download the data:
 
 ```{r}
 sc_companies <- c("TSM", "UMC", "INTC", "TXN", "NXP", "NVDA", "AVGO", "QCOM") %>%
@@ -141,7 +141,9 @@ fabless <- c("NVDA", "AVGO", "QCOM") %>%
          to   = "2021-06-27")
 ```
 
-### Ploting the data
+### It's time to plot the data
+
+**Let's see an overview**
 
 ```{r}
   ggplot(sc_companies, 
@@ -157,7 +159,9 @@ fabless <- c("NVDA", "AVGO", "QCOM") %>%
 
 ![Index](/images/semiconductores/semiconductorstockprice.png)
 
-### Let's wrap this companies for a better view.
+
+
+### Let's wrap for a better view.
 
 ```{r}
   ggplot(sc_companies, 
@@ -219,7 +223,7 @@ fabless <- c("NVDA", "AVGO", "QCOM") %>%
 
 ![Index](/images/semiconductores/idmstock.png)
 
-### The trend it's kinda obvious but remember... I have my personal goals for this project**
+### The trend it's kinda obvious but remember... I have my personal goals for this project
 
 ```{r}
   sc_companies %>% 
