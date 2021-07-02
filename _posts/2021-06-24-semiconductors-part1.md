@@ -161,7 +161,7 @@ fabless <- c("NVDA", "AVGO", "QCOM") %>%
 
 
 
-### Let's wrap for a better view.
+**Let's wrap for a better view.**
 
 ```{r}
   ggplot(sc_companies, 
