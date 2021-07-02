@@ -178,6 +178,8 @@ fabless <- c("NVDA", "AVGO", "QCOM") %>%
 
 ![Index](/images/semiconductores/semiconductorwrap.png)
 
+
+
 ### It's time to see between models.
 
 
