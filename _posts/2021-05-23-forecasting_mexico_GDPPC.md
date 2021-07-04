@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Forecasting GDPPC"
-description: "An introduction to Forecasting Modeling"
+title: "An Introduction to Forecasting Modeling"
+description: "Time Series Linear Model and Averages Method"
 output: html_document
 date: 2021-05-22 19:50:00 -0400
 category: r
