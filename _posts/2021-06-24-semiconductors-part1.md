@@ -37,13 +37,11 @@ That's why I created this project. **I'm going to divide the project in 2 parts.
 > **For you**, the project consists on understanding how the industry works, his performance over the years and why not, pick the opportunity to invest in the semiconductor industry.
 
 ---
-Let's begin with the first main point... **the business models.**
-
-In order to understand the complexity around the industry, we need an overview of the process for creating an IC'S 
+Let's begin with the first main point... **the business models.** In order to understand the complexity around the industry, we need an overview of the process for creating an IC'S 
 
 ![Index](/images/semiconductores/process.png)
 
-*As wee see, there are many steps. But We can categorize the whole process in three major business models.*
+> *As wee see, there are many steps. But we can categorize the whole process in three major business models.*
 
 ![Index](/images/semiconductores/HD.png)
 
@@ -72,13 +70,11 @@ Fabless companies focus only on IC design.
 **Broadcom, Qualcomm and AMD are examples of this model.**
 
 
-### Let's begin with an index performance comparation... but first
+### Let's begin with an index performance comparation
 
 I'm going to use the **PHLX Semiconductor Sector** Index
 
 > PHLX Semiconductor Sector is a Philadelphia Stock Exchange capitalization-weighted index composed of the 30 largest companies primarily involved in the design, distribution, manufacture, and sale of semiconductors. It was created in 1993 by the Philadelphia Stock Exchange
-
-Let's see a comparation between the major index's in USA.
 
 ![Index](/images/semiconductores/performancecomparation.png)
 
@@ -90,9 +86,7 @@ Let's see a comparation between the major index's in USA.
 * **Orange_DAX.-** German Index
 * **Yellow_TSXV.-** S&P/TSX CANADA COMPOSITE INDEX
 
-**If we look closely, the PHLX Index outperforms the NASDAQ COMPOSITE which contains companies like Apple, Amazon, Facebook and Alphabet... not bad, right?**
-
-So, for this project i'm going to choose 2 or 3 per model:
+**If we look closely, the PHLX Index outperforms the NASDAQ COMPOSITE which contains companies like Apple, Amazon, Facebook and Alphabet... not bad, right?** So, for this project i'm going to choose 2 or 3 per model:
 
 * **Foundry:** TSMC and UMC.
 * **IDM’s:** Intel, Texas instruments and NPX
@@ -109,9 +103,7 @@ These are the packages I will use throughout the project:
 
 ### CODE
 
-Let's begin!
-
-First, I need to download the data:
+#### First, I need to download the data:
 
 ```{r}
 sc_companies <- c("TSM", "UMC", "INTC", "TXN", "NXP", "NVDA", "AVGO", "QCOM") %>%
@@ -141,7 +133,7 @@ fabless <- c("NVDA", "AVGO", "QCOM") %>%
          to   = "2021-06-27")
 ```
 
-### It's time to plot the data
+#### Then, I need to plot the data
 
 **Let's see an overview**
 
@@ -180,7 +172,7 @@ fabless <- c("NVDA", "AVGO", "QCOM") %>%
 
 
 
-### It's time to see between models.
+### It's time to see between business models.
 
 
 ```{r}
