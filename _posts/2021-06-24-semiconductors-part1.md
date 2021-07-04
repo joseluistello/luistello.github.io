@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Semiconductors Analysis Part 1"
-description: "Stock analysis and forecasting models"
+title: "Semiconductor Market Analysis"
+description: "Visualizing the Stock Market With Tidyverse and TidyQuant"
 output: html_document
 date: 2021-06-28 19:50:00 -0400
 category: r
