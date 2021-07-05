@@ -58,7 +58,8 @@ comments: false
 - [Definiendo el valor y la estructura de precios](https://joseluistello.substack.com/p/valor-y-estructura-de-precios)
 - [Estructura de costos](https://joseluistello.substack.com/p/estructura-de-costos)
 - [Fijación de precios](https://joseluistello.substack.com/p/fijacin-de-precios)
-- [Forecasting Mexico GDP](https://joseluistello.github.io/r/forecasting_mexico_GDPPC/)
+- [An Introduction to Forecasting Modeling](https://joseluistello.github.io/r/forecasting_mexico_GDPPC/)
+- [Semiconductor Market Analysis](https://joseluistello.github.io/r/semiconductors-part1/)
 
 <!-- BLOG-POST-LIST:END -->
 
