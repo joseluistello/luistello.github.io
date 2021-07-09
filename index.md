@@ -1,6 +1,6 @@
 ---
 layout: home
-excerpt: "Blog on R, statistics, education and financial analysis by: José Luis Tello"
+excerpt: "Data analysis, finance and statistical modeling written in R by Jose Luis Tello"
 tags: [blog]
 ---
 
