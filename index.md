@@ -1,6 +1,6 @@
 ---
 layout: home
-excerpt: "Data analysis, finance and statistical modeling written in R by Jose Luis Tello"
+excerpt: "Data Analysis, Finance and Statistical Modeling in R by Jose Luis Tello"
 tags: [blog]
 ---
 
