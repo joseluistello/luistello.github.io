@@ -3,9 +3,9 @@ layout: post
 title: "Data Analysis Cicle"
 description: "Titanic And Machine Learning"
 output: html_document
-date: 2021-05-22 19:50:00 -0400
+date: 2021-07-09 19:50:00 -0400
 category: r
-tags: [data analysis, forecasting, r]
+tags: [data analysis, machine learning, r, data wrangling]
 comments: true
 ---
 
