@@ -3,7 +3,7 @@ layout: post
 title: "Data Analysis Process"
 description: "Titanic And Machine Learning"
 output: html_document
-date: 2021-07-09 9:50:00 -0400
+date: 2021-07-090 -0400
 category: r
 tags: [data analysis, machine learning, r, data wrangling]
 comments: true
@@ -13,7 +13,7 @@ comments: true
 
  This project's special. I'm going to talk about the process of analyzing data and *what I hope to accomplish here is to give you my way of thinking about data analysis.* 
  
- **As Sam Hinkie [wrote](https://www.espn.com/pdf/2016/0406/nba_hinkie_redact.pdf) about Seth Klarman and his approach at Baupost Group:** 
+ ##### **As Sam Hinkie [wrote](https://www.espn.com/pdf/2016/0406/nba_hinkie_redact.pdf) about Seth Klarman and his approach at Baupost Group:** 
 > **It isn’t the only way of thinking, but it’s how we approach it.**  
 
 
