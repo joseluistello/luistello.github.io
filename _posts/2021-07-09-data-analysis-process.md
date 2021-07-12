@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Data Analysis Process"
-description: "Titanic And Machine Learning"
+description: "A General View To My Approach"
 output: html_document
-date: 2021-07-090 19:50:00 -0400
+date: 2021-07-090 -0400
 category: r
 tags: [data analysis, machine learning, r, data wrangling]
 comments: true
@@ -29,7 +29,6 @@ If you are in the stage of Analyze, you can back to the Problem Stage. In the re
 ##### A holistic way to see the process
 
 ![Index](/images/data%20analysis/HD.png)
-
 
 
 #### Step 1.- Understand the problem and ask the right questions
