@@ -3,11 +3,12 @@ layout: post
 title: "Data Analysis Process"
 description: "A General View To My Approach"
 output: html_document
-date: 2021-07-09 19:50:00 -0400
+date: 2021-07-12 19:50:00 -0400
 category: r
 tags: [data analysis, machine learning, r, data wrangling]
 comments: true
 ---
+
 
 ### Introduction  
 
