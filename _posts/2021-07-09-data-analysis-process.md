@@ -21,11 +21,9 @@ That's it. My way is not exclusive, but it's how I approach it.
 ##### 💡 Remember 💡 
 
 The Analysis Data Process depends on the context in which you find yourself. 
-- 👉🏼 Use this process like a framework 👈🏼 
+- 👉🏼 Use this process as a framework 👈🏼 
   
-If you are in the stage of Analyze, you can back to the Problem Stage. In the real world, It's normal to go back to the problem stage and understand that the quality of our data is not optimal. 
-
-Specially when you are helping to grow a company! 
+If you are in the stage of Analyze, you can back to the Problem Stage. In the real world it's normal to go back to the problem stage and understand that the quality of our data is not optimal. Specially when you are helping to grow a company! 
 
 
 ##### A holistic way to see the process
@@ -34,7 +32,32 @@ Specially when you are helping to grow a company!
 
 
 
-#### Step 1.- ¿What is the question? .- Understand Data
+#### Step 1.- Understand the problem and ask the right questions
+
+There are different methods to attack a problem, usually called mental models. These tools are frameworks of thinking that humans have made to approach solutions. 
+
+**For example, Elon Musk has his favorite framework of thinking: the first principles.** 
+This model can be classified as a reductionist method. First Principles consist in break a whole problem into small parts. This approach helps Elon back then in the early years of SpaceX when he was competing against the Russian rockets
+
+I'm a big fan of reductionist thinking but I think that when it comes to analyzing data it is not a good approach. We can adopt a reductionist way when we are breaking a model equation or when we are study statistical models because it's helpful to see each part of the model for the purpose of fit or evaluation. 
+
+**Another example it's when we break into small parts the growth of a company.** We can adopt reductionist thinking for each Loop of growth. Imagine that your company grows through Paid Loops. 
+*You can adopt this path* Your team creates an ad --> people click an ad ->  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### Step 2.-  Understand Data
 
 
 
