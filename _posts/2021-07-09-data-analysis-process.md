@@ -11,19 +11,62 @@ comments: true
 
 ### Introduction  
 
- This project's special. I'm going to talk about the process of analyzing data and *what I hope to accomplish here is to give you my way of thinking about data analysis.* 
+ This project's special. I'm going to talk about MY process of analyzing data and *what I hope to accomplish here is to give you MY way of thinking about data analysis.* 
  
- ##### **As Sam Hinkie [wrote](https://www.espn.com/pdf/2016/0406/nba_hinkie_redact.pdf) about Seth Klarman and his approach at Baupost Group:** 
+ **As Sam Hinkie [wrote](https://www.espn.com/pdf/2016/0406/nba_hinkie_redact.pdf) on Seth Klarman and his approach at Baupost Group:** 
 > **It isn’t the only way of thinking, but it’s how we approach it.**  
-
 
 That's it. My way is not exclusive, but it's how I approach it. 
 
+##### 💡 Remember 💡 
+
+The Analysis Data Process depends on the context in which you find yourself. 
+- 👉🏼 Use this process like a framework 👈🏼 
+  
+If you are in the stage of Analyze, you can back to the Problem Stage. In the real world, It's normal to go back to the problem stage and understand that the quality of our data is not optimal. 
+
+Specially when you are helping to grow a company! 
+
+
 ##### A holistic way to see the process
 
-![Index](/images/data%20analysis/Page%201/HD.png)
+![Index](/images/data%20analysis/HD.png)
 
 
+
+#### Step 1.- ¿What is the question? .- Understand Data
+
+
+
+
+
+#### Step 2.- Preprocess And Analyze Data
+
+
+
+
+
+#### Step 3.- Model Data
+
+#### Step 4.- Analyze Data 
+
+
+
+
+
+
+#### Step 6.- Report And Communicate
+
+
+
+
+
+
+
+
+
+
+---
 
 ```{r}
 library(tidyverse)
