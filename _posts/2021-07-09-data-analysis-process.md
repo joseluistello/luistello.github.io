@@ -14,7 +14,7 @@ comments: true
 
  This project's special. I'm going to talk about MY process of analyzing data and *what I hope to accomplish here is to give you MY way of thinking about data analysis.* 
  
-  ###### **As Sam Hinkie [wrote](https://www.espn.com/pdf/2016/0406/nba_hinkie_redact.pdf) on Seth Klarman and his approach at Baupost Group:** 
+##### As Sam Hinkie [wrote](https://www.espn.com/pdf/2016/0406/nba_hinkie_redact.pdf) on Seth Klarman and his approach at Baupost Group: 
 > **It isn’t the only way of thinking, but it’s how we approach it.**  
 
 That's it. My way is not exclusive, but it's how I approach it. 
@@ -41,8 +41,9 @@ If you are in the stage of Analyze, you can back to the Problem Stage. In the re
 
 ##### I'm a big fan of reductionist thinking but I think that when it comes to analyzing data it is not a good approach. We can adopt a reductionist way when we are breaking a model equation or when we are study statistical models because it's helpful to see each part of the model for the purpose of fit or evaluation. 
 
-###### **Another example it's when we break into small parts the growth of a company.** We can adopt reductionist thinking for each Loop of growth. Imagine that your company grows through Paid Loops. 
-*You can adopt this path* Your team creates an ad --> people click an ad ->  
+##### Another example it's when we break into small parts the growth of a company. We can adopt reductionist thinking for each Loop of growth. Imagine that your company grows through Paid Loops. 
+
+
 
 
 
