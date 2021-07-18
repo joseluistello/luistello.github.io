@@ -10,16 +10,44 @@ comments: true
 ---
 
 
-### Introduction  
+### Hi there 👋
 
- This project's special. I'm going to talk about MY process of analyzing data and *what I hope to accomplish here is to give you MY way of thinking about data analysis.* 
+#### This project it's special. I'll write about thinking, data analysis, and how to approach problems and solve them systematically. 
+
+This is how I see structures and *what I hope to accomplish here is to give you MY way of thinking about data analysis.* 
  
 ##### As Sam Hinkie [wrote](https://www.espn.com/pdf/2016/0406/nba_hinkie_redact.pdf) on Seth Klarman and his approach at Baupost Group: 
 > **It isn’t the only way of thinking, but it’s how we approach it.**  
 
-That's it. My way is not exclusive, but it's how I approach it. 
+#### Thinking about thinking
+
+There are different methods to attack a problem, usually called mental models. These tools are frameworks of thinking that humans have made to approach solutions.
+
+#### Reductionism 💡
+
+For example, Elon Musk has his favorite framework of thinking: *the first principles*. This model can be classified as a reductionist method. 
+
+> First Principles consist in break a whole problem into small parts. This approach helps Elon back then in the early years when he wanted to create a cheaper and more accessible rocket compared to the Russians. Yes, this was the story behind SpaceX.
+
+I'm a big fan of reductionist thinking. We can adopt it when we are study statistical models. It is helpful to see each part of a linear regression and how [it's composed](https://www.youtube.com/watch?v=nk2CQITm_eo). 
+
+![alt text](/images/data%20analysis/linear%20regression.png)
+
+*Or even for the purpose to describe three of the four fundamental forces in the universe, as well as classifying elementary particles we know today.*
+
+[The Standard Model Of Particle Physics](https://cosmicescapes.com/the-standard-model-of-particle-physics/)
+
+
+![alt text](/images/data%20analysis/structure-of-std-mdl.png)
+
+
+#### What is the opposite way of thinking 
+
 
 ##### 💡 Remember 💡 
+
+
+
 
 The Analysis Data Process depends on the context in which you find yourself. 
 - 👉🏼 Use this process as a framework 👈🏼 
@@ -34,14 +62,8 @@ If you are in the stage of Analyze, you can back to the Problem Stage. In the re
 
 #### Step 1.- Understand the problem and ask the right questions
 
-##### There are different methods to attack a problem, usually called mental models. These tools are frameworks of thinking that humans have made to approach solutions. 
 
-##### **For example, Elon Musk has his favorite framework of thinking: the first principles.** 
-##### This model can be classified as a reductionist method. First Principles consist in break a whole problem into small parts. This approach helps Elon back then in the early years of SpaceX when he was competing against the Russian rockets
-
-##### I'm a big fan of reductionist thinking but I think that when it comes to analyzing data it is not a good approach. We can adopt a reductionist way when we are breaking a model equation or when we are study statistical models because it's helpful to see each part of the model for the purpose of fit or evaluation. 
-
-##### Another example it's when we break into small parts the growth of a company. We can adopt reductionist thinking for each Loop of growth. Imagine that your company grows through Paid Loops. 
+. 
 
 
 
